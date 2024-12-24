@@ -2,7 +2,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const jobRoutes = require("./routes/jobroutes");
+const jobRoutes = require("./routes/jobRoutes");
 require("dotenv").config(); // Import dotenv to load environment variables
 
 const app = express();
