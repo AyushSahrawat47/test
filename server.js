@@ -12,11 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose
-  .connect(process.env.MNG, {
-    // Use the MongoDB connection string from the .env file
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.MNG)
   .then(() => {
     console.log("Connected to MongoDB successfully");
   })
